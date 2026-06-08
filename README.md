@@ -32,8 +32,10 @@ This repository is a Markdown skill package. It does not require npm, Python, or
 
 Minimal options:
 
-1. Copy `clean-agent/` into a compatible skills directory, such as `~/.config/opencode/skills/clean-agent/`, `~/.agents/skills/clean-agent/`, or `~/.claude/skills/clean-agent/`.
-2. Or configure your tool's skills path to include this repository or its parent directory, so it can discover `clean-agent/SKILL.md`.
+1. Copy this entire repository directory into a compatible skills directory, such as `~/.config/opencode/skills/clean-agent/`, `~/.agents/skills/clean-agent/`, or `~/.claude/skills/clean-agent/`.
+2. Or configure your tool's skills path to include this repository or its parent directory, so it can discover the root `SKILL.md`.
+
+`SKILL.md` lives at the root of this repository.
 
 For opencode, a config example is:
 
@@ -51,11 +53,10 @@ Restart the host agent application after changing skill paths or adding skill fi
 
 ```text
 clean-agent/
-├── clean-agent/
-│   └── SKILL.md
 ├── .gitignore
 ├── LICENSE
-└── README.md
+├── README.md
+└── SKILL.md
 ```
 
 ## Usage
