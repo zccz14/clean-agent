@@ -30,7 +30,19 @@ PASS is the first point where the artifact is worth human review.
 
 This repository is a Markdown skill package. It does not require npm, Python, or a build step.
 
-Minimal options:
+Recommended:
+
+```bash
+npx skills add zccz14/clean-agent
+```
+
+To inspect the package before installing:
+
+```bash
+npx skills add zccz14/clean-agent --list
+```
+
+Manual options:
 
 1. Copy this entire repository directory into a compatible skills directory, such as `~/.config/opencode/skills/clean-agent/`, `~/.agents/skills/clean-agent/`, or `~/.claude/skills/clean-agent/`.
 2. Or configure your tool's skills path to include this repository or its parent directory, so it can discover the root `SKILL.md`.
