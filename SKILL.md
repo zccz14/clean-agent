@@ -1,6 +1,12 @@
 ---
 name: clean-agent
-description: Use when the user wants a create-review-repair loop, adversarial generation, AI self-review before human review, reduced human review bandwidth, or separate creator and reviewer SubAgents. This skill defines a general coordination pattern, not just agent-file creation: the main Agent coordinates only, creator SubAgents write files and return paths, reviewer SubAgents read only and return PASS / RETRY / FAILED with short audit notes.
+description: >-
+  Use when the user wants a create-review-repair loop, adversarial generation,
+  AI self-review before human review, reduced human review bandwidth, or separate
+  creator and reviewer SubAgents. This skill defines a general coordination
+  pattern, not just agent-file creation: the main Agent coordinates only,
+  creator SubAgents write files and return paths, reviewer SubAgents read only
+  and return PASS / RETRY / FAILED with short audit notes.
 ---
 
 # Clean Agent
